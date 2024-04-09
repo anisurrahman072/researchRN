@@ -63,7 +63,7 @@ export default function RichText() {
       .pushStyle(textStyle)
       .addText('Welcomme to RN')
       .pushStyle({...textStyle, fontStyle: {weight: 500}})
-      .addText(' Skia V1.')
+      .addText(' Skia V1.0.')
       .pushStyle({...textStyleBungee, fontStyle: {weight: 500}})
       .addText(' @anis_RNCore')
       .pushStyle({...textStyle})
@@ -84,11 +84,10 @@ export default function RichText() {
   return (
     <Canvas
       style={{
-        width: wp(100),
-        height: hp(50),
-        paddingVertical: hp(40),
+        width: wp(90),
+        height: hp(75),
       }}>
-      <Paragraph paragraph={paragraph} x={0} y={0} width={wp(100)} />
+      <Paragraph paragraph={paragraph} x={0} y={0} width={wp(90)} />
     </Canvas>
   );
 }
