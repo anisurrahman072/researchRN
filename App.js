@@ -1,5 +1,5 @@
 // NPM MODULES
-import React from 'react';
+import React, {useMemo} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -9,26 +9,15 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import {Canvas, Circle, Group} from '@shopify/react-native-skia';
 
 // UTILS
 import FONTS from './src/utils/fonts';
+import RichText from './src/components/richText';
 
 function App() {
-  const width = 256;
-  const height = 256;
-  const r = width * 0.33;
-
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>I'm Anis</Text>
-      <Canvas style={{width, height}}>
-        <Group blendMode="multiply">
-          <Circle cx={r} cy={r} r={r} color="cyan" />
-          <Circle cx={width - r} cy={r} r={r} color="magenta" />
-          <Circle cx={width / 2} cy={width - r} r={r} color="yellow" />
-        </Group>
-      </Canvas>
+      <RichText />
     </SafeAreaView>
   );
 }
