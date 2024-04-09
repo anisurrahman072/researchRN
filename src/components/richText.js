@@ -42,7 +42,7 @@ export default function RichText() {
     const textStyleBungee = {
       color: Skia.Color('black'),
       fontFamilies: ['Bungee'],
-      fontSize: 50,
+      fontSize: 45,
     };
     const textStylePacifico = {
       color: Skia.Color('black'),
@@ -64,10 +64,10 @@ export default function RichText() {
       .addText('Welcome to RN')
       .pushStyle({...textStyle, fontStyle: {weight: 500}})
       .addText(' Skia V1.0. 🚀')
-      .pushStyle({...textStyleBungee, fontStyle: {weight: 500}})
-      .addText(' @anis_RNCore')
+      .pushStyle({...textStyleBungee})
+      .addText(' #NotJustDev')
       .pushStyle({...textStyle})
-      .addText(' is Presenting ')
+      .addText(' is presenting ')
       .pushStyle({...textStyle, fontStyle: {weight: 500}})
       .addText('Skia.')
       .pushStyle({...textStylePacifico})
@@ -85,7 +85,7 @@ export default function RichText() {
     <Canvas
       style={{
         width: wp(90),
-        height: hp(80),
+        height: hp(75),
       }}>
       <Paragraph paragraph={paragraph} x={0} y={0} width={wp(90)} />
     </Canvas>
