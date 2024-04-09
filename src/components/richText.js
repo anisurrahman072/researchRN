@@ -85,7 +85,7 @@ export default function RichText() {
     <Canvas
       style={{
         width: wp(90),
-        height: hp(75),
+        height: hp(70),
       }}>
       <Paragraph paragraph={paragraph} x={0} y={0} width={wp(90)} />
     </Canvas>
