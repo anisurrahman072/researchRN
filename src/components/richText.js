@@ -19,6 +19,9 @@ export default function RichText() {
     ],
     Bungee: [require('../../assets/fonts/bungee/BungeeSpice-Regular.ttf')],
     Pacifico: [require('../../assets/fonts/pacifico/Pacifico-Regular.ttf')],
+    Climate: [
+      require('../../assets/fonts/climate/ClimateCrisis-Regular-VariableFont_YEAR.ttf'),
+    ],
   });
 
   const paragraph = useMemo(() => {
@@ -43,6 +46,11 @@ export default function RichText() {
       fontFamilies: ['Pacifico'],
       fontSize: 50,
     };
+    const textStyleClimate = {
+      color: Skia.Color('blue'),
+      fontFamilies: ['Climate'],
+      fontSize: 40,
+    };
     return Skia.ParagraphBuilder.Make(paragraphStyle, customFontMgr)
       .pushStyle(textStyle)
       .addText('Welcomme to RN')
@@ -55,7 +63,9 @@ export default function RichText() {
       .pushStyle({...textStyle, fontStyle: {weight: 500}})
       .addText('RN Skia.')
       .pushStyle({...textStylePacifico})
-      .addText('Mix & Match.')
+      .addText('Mix & Match ')
+      .pushStyle({...textStyleClimate})
+      .addText(' fonts & text layouts ')
       .pop()
       .build();
   }, [customFontMgr]);
