@@ -6,6 +6,14 @@
       "sha1": "95b7defc8e5c59b08c23e6f971d866801ca21cfd"
     },
     {
+      "path": "assets/fonts/climate/ClimateCrisis-Regular-VariableFont_YEAR.ttf",
+      "sha1": "e1e387e74927ce38160b7953a451bb9eed1a5795"
+    },
+    {
+      "path": "assets/fonts/pacifico/Pacifico-Regular.ttf",
+      "sha1": "baca1fca7fe74b61cb33aa0da48ec1a3a77bcf49"
+    },
+    {
       "path": "assets/fonts/roboto/Roboto-Black.ttf",
       "sha1": "3f8e401d808f6ce84b542266726514ac8be73171"
     },
@@ -52,6 +60,14 @@
     {
       "path": "assets/fonts/roboto/Roboto-ThinItalic.ttf",
       "sha1": "cc79d5a23bd0ec08b1d99f5390bf33cacc3082f4"
+    },
+    {
+      "path": "assets/fonts/tourney/Tourney-Italic-VariableFont_wdth.ttf",
+      "sha1": "d538925c744e4b3880989c69c4eb4dc45c9c0075"
+    },
+    {
+      "path": "assets/fonts/tourney/Tourney-VariableFont_wdth.ttf",
+      "sha1": "b0942ac22565dd1d06fcc62635b50d99e8c340f8"
     }
   ]
 }

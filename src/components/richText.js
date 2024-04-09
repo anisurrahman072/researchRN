@@ -22,6 +22,9 @@ export default function RichText() {
     Climate: [
       require('../../assets/fonts/climate/ClimateCrisis-Regular-VariableFont_YEAR.ttf'),
     ],
+    Tourney: [
+      require('../../assets/fonts/tourney/Tourney-Italic-VariableFont_wdth.ttf'),
+    ],
   });
 
   const paragraph = useMemo(() => {
@@ -47,15 +50,20 @@ export default function RichText() {
       fontSize: 50,
     };
     const textStyleClimate = {
-      color: Skia.Color('blue'),
+      color: Skia.Color('darkseagreen'),
       fontFamilies: ['Climate'],
       fontSize: 40,
+    };
+    const textStyleTourney = {
+      color: Skia.Color('magenta'),
+      fontFamilies: ['Tourney'],
+      fontSize: 50,
     };
     return Skia.ParagraphBuilder.Make(paragraphStyle, customFontMgr)
       .pushStyle(textStyle)
       .addText('Welcomme to RN')
       .pushStyle({...textStyle, fontStyle: {weight: 500}})
-      .addText(' Skia V1.0.')
+      .addText(' Skia V1.')
       .pushStyle({...textStyleBungee, fontStyle: {weight: 500}})
       .addText(' @anis_RNCore')
       .pushStyle({...textStyle})
@@ -63,9 +71,11 @@ export default function RichText() {
       .pushStyle({...textStyle, fontStyle: {weight: 500}})
       .addText('RN Skia.')
       .pushStyle({...textStylePacifico})
-      .addText('Mix & Match ')
+      .addText('Mixing and matching ')
       .pushStyle({...textStyleClimate})
       .addText(' fonts & text layouts ')
+      .pushStyle({...textStyleTourney, fontStyle: {weight: 1000}})
+      .addText(' is fun! ')
       .pop()
       .build();
   }, [customFontMgr]);

@@ -27,6 +27,10 @@
 		9A2B9441FCB945929C7B7EE0 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F632EE702520498DAFC5876F /* Roboto-Thin.ttf */; };
 		BE9C0218A68547308C6D5DEC /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF476BB7660B47F289DC5581 /* Roboto-ThinItalic.ttf */; };
 		4AF014B4F13D41AAAD8DC083 /* BungeeSpice-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D0378EE14D748DC996BF543 /* BungeeSpice-Regular.ttf */; };
+		BFE9B0E704834CE697A7F85B /* ClimateCrisis-Regular-VariableFont_YEAR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C807CBFFD574D88A6AD5CE9 /* ClimateCrisis-Regular-VariableFont_YEAR.ttf */; };
+		E0B31FE5BD844E4AB590C1C4 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 737922DE64B24A5D8412FC81 /* Pacifico-Regular.ttf */; };
+		4C730672A53144F4AE30EC37 /* Tourney-Italic-VariableFont_wdth.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD1905F461A44FEB8AB631A2 /* Tourney-Italic-VariableFont_wdth.ttf */; };
+		A6AD0F3F06C74D089B350829 /* Tourney-VariableFont_wdth.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E05449C73F2E4AF8A6102D95 /* Tourney-VariableFont_wdth.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		F632EE702520498DAFC5876F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; name = "Roboto-Thin.ttf"; path = "../assets/fonts/roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		FF476BB7660B47F289DC5581 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-ThinItalic.ttf"; path = "../assets/fonts/roboto/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		0D0378EE14D748DC996BF543 /* BungeeSpice-Regular.ttf */ = {isa = PBXFileReference; name = "BungeeSpice-Regular.ttf"; path = "../assets/fonts/bungee/BungeeSpice-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7C807CBFFD574D88A6AD5CE9 /* ClimateCrisis-Regular-VariableFont_YEAR.ttf */ = {isa = PBXFileReference; name = "ClimateCrisis-Regular-VariableFont_YEAR.ttf"; path = "../assets/fonts/climate/ClimateCrisis-Regular-VariableFont_YEAR.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		737922DE64B24A5D8412FC81 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; name = "Pacifico-Regular.ttf"; path = "../assets/fonts/pacifico/Pacifico-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BD1905F461A44FEB8AB631A2 /* Tourney-Italic-VariableFont_wdth.ttf */ = {isa = PBXFileReference; name = "Tourney-Italic-VariableFont_wdth.ttf"; path = "../assets/fonts/tourney/Tourney-Italic-VariableFont_wdth.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E05449C73F2E4AF8A6102D95 /* Tourney-VariableFont_wdth.ttf */ = {isa = PBXFileReference; name = "Tourney-VariableFont_wdth.ttf"; path = "../assets/fonts/tourney/Tourney-VariableFont_wdth.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +199,10 @@
 				F632EE702520498DAFC5876F /* Roboto-Thin.ttf */,
 				FF476BB7660B47F289DC5581 /* Roboto-ThinItalic.ttf */,
 				0D0378EE14D748DC996BF543 /* BungeeSpice-Regular.ttf */,
+				7C807CBFFD574D88A6AD5CE9 /* ClimateCrisis-Regular-VariableFont_YEAR.ttf */,
+				737922DE64B24A5D8412FC81 /* Pacifico-Regular.ttf */,
+				BD1905F461A44FEB8AB631A2 /* Tourney-Italic-VariableFont_wdth.ttf */,
+				E05449C73F2E4AF8A6102D95 /* Tourney-VariableFont_wdth.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -304,6 +316,10 @@
 				9A2B9441FCB945929C7B7EE0 /* Roboto-Thin.ttf in Resources */,
 				BE9C0218A68547308C6D5DEC /* Roboto-ThinItalic.ttf in Resources */,
 				4AF014B4F13D41AAAD8DC083 /* BungeeSpice-Regular.ttf in Resources */,
+				BFE9B0E704834CE697A7F85B /* ClimateCrisis-Regular-VariableFont_YEAR.ttf in Resources */,
+				E0B31FE5BD844E4AB590C1C4 /* Pacifico-Regular.ttf in Resources */,
+				4C730672A53144F4AE30EC37 /* Tourney-Italic-VariableFont_wdth.ttf in Resources */,
+				A6AD0F3F06C74D089B350829 /* Tourney-VariableFont_wdth.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
