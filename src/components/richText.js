@@ -18,6 +18,7 @@ export default function RichText() {
       require('../../assets/fonts/roboto/Roboto-Medium.ttf'),
     ],
     Bungee: [require('../../assets/fonts/bungee/BungeeSpice-Regular.ttf')],
+    Pacifico: [require('../../assets/fonts/pacifico/Pacifico-Regular.ttf')],
   });
 
   const paragraph = useMemo(() => {
@@ -37,17 +38,24 @@ export default function RichText() {
       fontFamilies: ['Bungee'],
       fontSize: 50,
     };
+    const textStylePacifico = {
+      color: Skia.Color('black'),
+      fontFamilies: ['Pacifico'],
+      fontSize: 50,
+    };
     return Skia.ParagraphBuilder.Make(paragraphStyle, customFontMgr)
       .pushStyle(textStyle)
-      .addText('Say Hello to ')
+      .addText('Welcomme to RN')
       .pushStyle({...textStyle, fontStyle: {weight: 500}})
-      .addText('Skia.')
+      .addText(' Skia V1.0.')
       .pushStyle({...textStyleBungee, fontStyle: {weight: 500}})
-      .addText('#NotJustDev')
+      .addText(' @anis_RNCore')
       .pushStyle({...textStyle})
-      .addText(' Presenting ')
+      .addText(' is Presenting ')
       .pushStyle({...textStyle, fontStyle: {weight: 500}})
-      .addText('Skia.')
+      .addText('RN Skia.')
+      .pushStyle({...textStylePacifico})
+      .addText('Mix & Match.')
       .pop()
       .build();
   }, [customFontMgr]);
