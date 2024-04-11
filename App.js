@@ -17,11 +17,13 @@ import {
 // UTILS
 import FONTS from './src/utils/fonts';
 import RichText from './src/components/richText';
+import AtlasAPI from './src/components/AtlasAPI';
 
 function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <RichText />
+      {/* <RichText /> */}
+      <AtlasAPI />
     </SafeAreaView>
   );
 }
