@@ -10,9 +10,9 @@ import { createNativeStackNavigator } from 'react-native-screens/native-stack'
 import { GestureDetectorProvider } from 'react-native-screens/gesture-handler'
 
 // SCREENS
+import Home from './src/components/home'
 import ScreenA from './src/components/screenA'
 import ScreenB from './src/components/screenB'
-import ScreenC from './src/components/screenC'
 
 const Stack = createNativeStackNavigator()
 
@@ -23,9 +23,17 @@ function App() {
 				<NavigationContainer>
 					<Stack.Navigator>
 						<Stack.Screen
+							name="Home"
+							component={Home}
+							options={{
+								headerShown: false
+							}}
+						/>
+						<Stack.Screen
 							name="ScreenA"
 							component={ScreenA}
 							options={{
+								goBackGesture: 'swipeDown',
 								headerShown: false
 							}}
 						/>
@@ -34,14 +42,6 @@ function App() {
 							component={ScreenB}
 							options={{
 								goBackGesture: 'twoDimensionalSwipe',
-								headerShown: false
-							}}
-						/>
-						<Stack.Screen
-							name="ScreenC"
-							component={ScreenC}
-							options={{
-								goBackGesture: 'swipeDown',
 								headerShown: false
 							}}
 						/>
