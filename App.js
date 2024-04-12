@@ -29,6 +29,7 @@ function App() {
 								headerShown: false
 							}}
 						/>
+						{/* My BOOK */}
 						<Stack.Screen
 							name="ScreenA"
 							component={ScreenA}

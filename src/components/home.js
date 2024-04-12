@@ -13,7 +13,7 @@ import {
 import { Button, TouchableOpacity, View, Text } from 'react-native'
 import { responsiveScreenFontSize } from 'react-native-responsive-dimensions'
 
-export default function ScreenA({ navigation }) {
+export default function Home({ navigation }) {
 	// Render the paragraph
 	return (
 		<View style={{ flex: 1, backgroundColor: 'yellow' }}>
