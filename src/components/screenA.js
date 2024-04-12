@@ -20,7 +20,9 @@ export default function ScreenA({ navigation }) {
 			<TouchableOpacity
 				onPress={() => navigation.navigate('ScreenB')}
 				style={{ marginTop: hp(20) }}>
-				<Text style={{ fontSize: responsiveScreenFontSize(10) }}>AAAAAAA</Text>
+				<Text style={{ fontSize: responsiveScreenFontSize(10) }}>
+					CLICK ME (A)
+				</Text>
 			</TouchableOpacity>
 		</View>
 	)
