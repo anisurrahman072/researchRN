@@ -34,18 +34,26 @@ export default function Home({ navigation }) {
 					left: 0
 				}}>
 				<Image
-					style={{ width: wp(100), height: hp(100), opacity: 0.7 }}
+					style={{ width: wp(100), height: hp(100), opacity: 0.8 }}
 					source={require('../../assets/images/bgdark.jpg')}
 				/>
 			</View>
-			<TouchableOpacity
-				onPress={() => navigation.navigate('ScreenE')}
-				style={{ padding: wp(5) }}>
-				<Image
-					style={styles.teamImg}
-					source={require('../../assets/images/second.jpg')}
-				/>
-			</TouchableOpacity>
+
+			{/* ITEMS */}
+			<View style={{ display: 'flex', flexWrap: 'wrap' }}>
+				<TouchableOpacity
+					onPress={() => navigation.navigate('ScreenA')}
+					style={{
+						padding: wp(0.5),
+						backgroundColor: 'gainsboro',
+						borderRadius: wp(2)
+					}}>
+					<Image
+						style={styles.teamImg}
+						source={require('../../assets/images/first.png')}
+					/>
+				</TouchableOpacity>
+			</View>
 		</ImageBackground>
 	)
 }
@@ -55,8 +63,9 @@ const styles = StyleSheet.create({
 		flex: 1
 	},
 	teamImg: {
-		width: wp('40%'),
-		height: hp('10%')
+		width: wp('35%'),
+		height: hp('25%'),
+		borderRadius: wp(2)
 		// objectFit: 'contain'
 	}
 })
