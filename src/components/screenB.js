@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { Text, TouchableOpacity, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { responsiveScreenFontSize } from 'react-native-responsive-dimensions'
 import {
 	widthPercentageToDP as wp,
@@ -9,13 +9,22 @@ import {
 export default function ScreenB({ navigation }) {
 	return (
 		<View style={{ flex: 1, backgroundColor: 'cyan' }}>
-			<TouchableOpacity
-				onPress={() => navigation.navigate('ScreenC')}
-				style={{ marginTop: hp(20) }}>
-				<Text style={{ fontSize: responsiveScreenFontSize(10) }}>
-					CLICK ME (B)
-				</Text>
-			</TouchableOpacity>
+			<Image
+				resizeMode="contain"
+				style={styles.teamImg}
+				source={require('../../assets/images/second.jpg')}
+			/>
 		</View>
 	)
 }
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		backgroundColor: 'blanchedalmond'
+	},
+	teamImg: {
+		height: hp(100),
+		objectFit: 'cover'
+	}
+})
