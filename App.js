@@ -22,15 +22,29 @@ function App() {
 			<GestureDetectorProvider>
 				<NavigationContainer>
 					<Stack.Navigator>
-						<Stack.Screen name="ScreenA" component={ScreenA} />
+						<Stack.Screen
+							name="ScreenA"
+							component={ScreenA}
+							options={{
+								headerShown: false
+							}}
+						/>
 						<Stack.Screen
 							name="ScreenB"
 							component={ScreenB}
 							options={{
-								goBackGesture: 'twoDimensionalSwipe'
+								goBackGesture: 'twoDimensionalSwipe',
+								headerShown: false
 							}}
 						/>
-						{/* <Stack.Screen name="ScreenC" component={ScreenC} /> */}
+						<Stack.Screen
+							name="ScreenC"
+							component={ScreenC}
+							options={{
+								goBackGesture: 'swipeDown',
+								headerShown: false
+							}}
+						/>
 					</Stack.Navigator>
 				</NavigationContainer>
 			</GestureDetectorProvider>
