@@ -18,7 +18,7 @@ export default function Home({ navigation }) {
 	return (
 		<View style={{ flex: 1, backgroundColor: 'yellow' }}>
 			<TouchableOpacity
-				onPress={() => navigation.navigate('ScreenD')}
+				onPress={() => navigation.navigate('ScreenE')}
 				style={{ marginTop: hp(20) }}>
 				<Text style={{ fontSize: responsiveScreenFontSize(10) }}>
 					CLICK ME (A)
