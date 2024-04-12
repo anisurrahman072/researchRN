@@ -10,7 +10,6 @@ export default function ScreenB({ navigation }) {
 	return (
 		<View style={{ flex: 1, backgroundColor: 'cyan' }}>
 			<Image
-				resizeMode="contain"
 				style={styles.teamImg}
 				source={require('../../assets/images/second.jpg')}
 			/>
@@ -24,7 +23,7 @@ const styles = StyleSheet.create({
 		backgroundColor: 'blanchedalmond'
 	},
 	teamImg: {
-		height: hp(100),
-		objectFit: 'cover'
+		width: wp('100%'),
+		height: wp('250%')
 	}
 })
