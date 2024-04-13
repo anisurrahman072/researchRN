@@ -8,6 +8,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { createNativeStackNavigator } from 'react-native-screens/native-stack'
 import { GestureDetectorProvider } from 'react-native-screens/gesture-handler'
+import { ScreenTransition } from 'react-native-reanimated'
 
 // SCREENS
 import Home from './src/components/home'
@@ -19,6 +20,26 @@ import ScreenE from './src/components/screenE'
 import ScreenF from './src/components/screenF'
 
 const Stack = createNativeStackNavigator()
+
+const customTransition = {
+	topScreenFrame: (event, screenSize) => {
+		'worklet'
+		const progress = event.translationX / screenSize.width
+		return {
+			transform: [
+				{ translateX: 1.3 * event.translationX },
+				{ rotate: 20 * progress + 'deg' }
+			]
+		}
+	},
+	belowTopScreenFrame: (event, screenSize) => {
+		'worklet'
+		const progress = event.translationX / screenSize.width
+		return {
+			transform: [{ scale: 0.7 + 0.3 * progress }]
+		}
+	}
+}
 
 function App() {
 	return (
@@ -39,7 +60,8 @@ function App() {
 							component={ScreenA}
 							options={{
 								goBackGesture: 'swipeDown',
-								headerShown: false
+								headerShown: false,
+								transitionAnimation: customTransition
 							}}
 						/>
 						<Stack.Screen
