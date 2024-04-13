@@ -103,10 +103,15 @@ export default function Home({ navigation }) {
 				style={{
 					textAlign: 'center',
 					width: wp(90),
-					height: hp(12)
+					height: Platform.OS === 'ios' ? hp(12) : hp(9)
 					// backgroundColor: 'red'
 				}}>
-				<Paragraph paragraph={paragraph} x={0} y={40} width={wp(90)} />
+				<Paragraph
+					paragraph={paragraph}
+					x={0}
+					y={Platform.OS === 'ios' ? 40 : 10}
+					width={wp(90)}
+				/>
 			</Canvas>
 
 			{/* ITEMS */}
