@@ -114,7 +114,7 @@ export default function Home({ navigation }) {
 				<Card
 					navigation={navigation}
 					screen={'ScreenA'}
-					imageLink={require('../../assets/images/first.png')}
+					imageLink={require('../../assets/images/seventh.jpg')}
 				/>
 				<Card
 					navigation={navigation}
