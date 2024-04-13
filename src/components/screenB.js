@@ -22,7 +22,7 @@ export default function ScreenB({ navigation }) {
 				}}>
 				<Text
 					style={{
-						fontSize: 40,
+						fontSize: 30,
 						color: 'white',
 						textAlign: 'center',
 						fontWeight: 'bold'
@@ -41,6 +41,6 @@ const styles = StyleSheet.create({
 	},
 	teamImg: {
 		width: wp('100%'),
-		height: wp('210%')
+		height: wp('220%')
 	}
 })

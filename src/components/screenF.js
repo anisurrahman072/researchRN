@@ -41,6 +41,6 @@ const styles = StyleSheet.create({
 	},
 	teamImg: {
 		width: wp('100%'),
-		height: wp('210%')
+		height: wp('220%')
 	}
 })
