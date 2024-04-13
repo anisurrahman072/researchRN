@@ -59,16 +59,16 @@ function App() {
 							name="ScreenA"
 							component={ScreenA}
 							options={{
-								goBackGesture: 'swipeDown',
-								headerShown: false,
-								transitionAnimation: customTransition
+								goBackGesture: 'twoDimensionalSwipe',
+								headerShown: false
+								// transitionAnimation: customTransition
 							}}
 						/>
 						<Stack.Screen
 							name="ScreenB"
 							component={ScreenB}
 							options={{
-								goBackGesture: 'twoDimensionalSwipe',
+								goBackGesture: 'swipeDown',
 								headerShown: false
 							}}
 						/>
@@ -76,7 +76,7 @@ function App() {
 							name="ScreenC"
 							component={ScreenC}
 							options={{
-								goBackGesture: 'twoDimensionalSwipe',
+								goBackGesture: 'swipeRight',
 								headerShown: false
 							}}
 						/>
@@ -84,7 +84,7 @@ function App() {
 							name="ScreenD"
 							component={ScreenD}
 							options={{
-								goBackGesture: 'twoDimensionalSwipe',
+								goBackGesture: 'swipeUp',
 								headerShown: false
 							}}
 						/>
@@ -92,7 +92,7 @@ function App() {
 							name="ScreenE"
 							component={ScreenE}
 							options={{
-								goBackGesture: 'twoDimensionalSwipe',
+								goBackGesture: 'swipeLeft',
 								headerShown: false
 							}}
 						/>
