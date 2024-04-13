@@ -16,6 +16,7 @@ import ScreenB from './src/components/screenB'
 import ScreenC from './src/components/screenC'
 import ScreenD from './src/components/screenD'
 import ScreenE from './src/components/screenE'
+import ScreenF from './src/components/screenF'
 
 const Stack = createNativeStackNavigator()
 
@@ -68,6 +69,14 @@ function App() {
 						<Stack.Screen
 							name="ScreenE"
 							component={ScreenE}
+							options={{
+								goBackGesture: 'twoDimensionalSwipe',
+								headerShown: false
+							}}
+						/>
+						<Stack.Screen
+							name="ScreenF"
+							component={ScreenF}
 							options={{
 								goBackGesture: 'twoDimensionalSwipe',
 								headerShown: false
