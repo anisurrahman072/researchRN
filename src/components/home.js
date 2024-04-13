@@ -21,11 +21,11 @@ import {
 } from 'react-native'
 import { responsiveScreenFontSize } from 'react-native-responsive-dimensions'
 
-function Card({ navigation, screen, imageLink }) {
+function Card({ navigate, screen, imageLink }) {
 	console.log('JJJJJJ: ', screen, imageLink)
 	return (
 		<TouchableOpacity
-			onPress={() => navigation.navigate(screen)}
+			onPress={() => navigate(screen)}
 			style={{
 				paddingHorizontal: wp(3),
 				paddingVertical: wp(3),
@@ -36,7 +36,7 @@ function Card({ navigation, screen, imageLink }) {
 	)
 }
 
-export default function Home({ navigation }) {
+export default function Home({ navigation: { navigate } }) {
 	const customFontMgr = useFonts({
 		Roboto: [
 			require('../../assets/fonts/roboto/Roboto-Regular.ttf'),
@@ -117,32 +117,32 @@ export default function Home({ navigation }) {
 			{/* ITEMS */}
 			<View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
 				<Card
-					navigation={navigation}
+					navigate={navigate}
 					screen={'ScreenA'}
 					imageLink={require('../../assets/images/seventh.jpg')}
 				/>
 				<Card
-					navigation={navigation}
+					navigate={navigate}
 					screen={'ScreenB'}
 					imageLink={require('../../assets/images/fourth.jpg')}
 				/>
 				<Card
-					navigation={navigation}
+					navigate={navigate}
 					screen={'ScreenC'}
 					imageLink={require('../../assets/images/third.jpg')}
 				/>
 				<Card
-					navigation={navigation}
+					navigate={navigate}
 					screen={'ScreenD'}
 					imageLink={require('../../assets/images/second.jpg')}
 				/>
 				<Card
-					navigation={navigation}
+					navigate={navigate}
 					screen={'ScreenE'}
 					imageLink={require('../../assets/images/fifth.jpg')}
 				/>
 				<Card
-					navigation={navigation}
+					navigate={navigate}
 					screen={'ScreenF'}
 					imageLink={require('../../assets/images/sixth.jpg')}
 				/>
