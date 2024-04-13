@@ -75,7 +75,7 @@ export default function Home({ navigation }) {
 				<Card
 					navigation={navigation}
 					screen={'ScreenB'}
-					imageLink={require('../../assets/images/second.jpg')}
+					imageLink={require('../../assets/images/fourth.jpg')}
 				/>
 				<Card
 					navigation={navigation}
@@ -85,7 +85,7 @@ export default function Home({ navigation }) {
 				<Card
 					navigation={navigation}
 					screen={'ScreenD'}
-					imageLink={require('../../assets/images/fourth.jpg')}
+					imageLink={require('../../assets/images/second.jpg')}
 				/>
 				<Card
 					navigation={navigation}

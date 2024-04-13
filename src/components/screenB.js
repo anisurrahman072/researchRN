@@ -11,7 +11,7 @@ export default function ScreenB({ navigation }) {
 		<View style={{ flex: 1, backgroundColor: 'cyan', position: 'relative' }}>
 			<Image
 				style={styles.teamImg}
-				source={require('../../assets/images/second.jpg')}
+				source={require('../../assets/images/fourth.jpg')}
 			/>
 			<View
 				style={{
@@ -27,7 +27,7 @@ export default function ScreenB({ navigation }) {
 						textAlign: 'center',
 						fontWeight: 'bold'
 					}}>
-					SWIPE DOWN (⏬)
+					SWIPE DOWN (👇👇)
 				</Text>
 			</View>
 		</View>
@@ -41,6 +41,6 @@ const styles = StyleSheet.create({
 	},
 	teamImg: {
 		width: wp('100%'),
-		height: wp('250%')
+		height: wp('210%')
 	}
 })

@@ -13,6 +13,23 @@ export default function ScreenF({ navigation }) {
 				style={styles.teamImg}
 				source={require('../../assets/images/sixth.jpg')}
 			/>
+			<View
+				style={{
+					position: 'absolute',
+					top: 70,
+					left: 0,
+					width: wp(100)
+				}}>
+				<Text
+					style={{
+						fontSize: 40,
+						color: 'white',
+						textAlign: 'center',
+						fontWeight: 'bold'
+					}}>
+					SWIPE ANY SIDE
+				</Text>
+			</View>
 		</View>
 	)
 }
