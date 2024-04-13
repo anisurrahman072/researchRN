@@ -8,11 +8,28 @@ import {
 
 export default function ScreenB({ navigation }) {
 	return (
-		<View style={{ flex: 1, backgroundColor: 'cyan' }}>
+		<View style={{ flex: 1, backgroundColor: 'cyan', position: 'relative' }}>
 			<Image
 				style={styles.teamImg}
 				source={require('../../assets/images/second.jpg')}
 			/>
+			<View
+				style={{
+					position: 'absolute',
+					top: 70,
+					left: 0,
+					width: wp(100)
+				}}>
+				<Text
+					style={{
+						fontSize: 40,
+						color: 'white',
+						textAlign: 'center',
+						fontWeight: 'bold'
+					}}>
+					SWIPE DOWN (⏬)
+				</Text>
+			</View>
 		</View>
 	)
 }
