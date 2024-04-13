@@ -60,6 +60,7 @@ export default function Home({ navigation }) {
 					color: 'white',
 					textAlign: 'center',
 					fontWeight: 'bold',
+					paddingTop: wp(8),
 					paddingBottom: wp(2)
 				}}>
 				HOME
